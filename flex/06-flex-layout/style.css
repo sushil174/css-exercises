@@ -63,7 +63,6 @@ body {
 }
 
 .footer{
-  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   background-color: rgb(190, 190, 205);
