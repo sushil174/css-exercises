@@ -45,3 +45,39 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 100px 100px 500px 100px;
+  gap: 15px;
+  /* grid-template-areas: "header header"
+                        "sidebar nav"
+                        "sidebar article"
+                        "footer footer"; */
+}
+
+.header {
+  grid-column : 1 / 3;
+  /* grid-area: header; */
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 3;
+  /* grid-area: article; */
+}
+
+.footer {
+  grid-column: 1 / 3;
+  /* grid-area: footer; */
+}
+
+.sidebar {
+  grid-row: 2 / 4;
+  /* grid-area: sidebar; */
+}
+
+/* .nav {
+  grid-area: nav;
+} */
